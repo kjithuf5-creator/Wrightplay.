@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+     "test": "playwright test",
+    "test:smoke":"playwright test --grep @smoke",
+    "test:regression":"playwright test --grep @reg",
+    "test:sanity":"playwright test --grep @san",
+    "test:sanChrome":"playwright test --grep @san --project=chromium",
+    "test:regHeaded":"playwright test --grep @reg --headed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
