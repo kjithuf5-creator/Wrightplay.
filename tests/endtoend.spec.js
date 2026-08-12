@@ -1,11 +1,11 @@
 import {test , expect} from "@playwright/test" ; 
 import { url } from "node:inspector";
 
-test.only("jithendra1" , async ({page})=>{
+test.only("jithendra1 @smoke" , async ({page})=>{
  console.log("jithendra1");
 })
 
-test("jithendra2" , async ({page})=>{
+test("jithendra2 @sanity" , async ({page})=>{
  console.log("jithendra2");
 })
 
