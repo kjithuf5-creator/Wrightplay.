@@ -13,7 +13,7 @@ let record = parse(fileContent, {
 });
 
 for(let data of record){
-    test(`login test ${data.email}` , async({page})=>{
+    test(`@regression login test ${data.email}` , async({page})=>{
     await page.goto("https://demowebshop.tricentis.com/");
     await page.getByRole("link", { name: "Log in" }).click();
     await page.getByLabel("Email:").fill(data.email);
