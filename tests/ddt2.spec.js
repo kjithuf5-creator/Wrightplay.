@@ -6,7 +6,7 @@ import fs from 'fs';
  let loginData = JSON.parse(fs.readFileSync(jsonpath,'utf-8'));
  for(let {email,password} of loginData){
 
-    test(`login data ${email} and ${password}`, async({ page })=>{
+    test(` @sanity login data ${email} and ${password}`, async({ page })=>{
     await page.goto("https://demowebshop.tricentis.com/");
     await page.locator(".ico-login").click();
     await page.locator("#Email").fill("email");
